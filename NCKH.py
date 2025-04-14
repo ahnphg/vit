@@ -5,7 +5,7 @@ import matplotlib . pyplot as plt
 import torch
 from transformers import ViTImageProcessor , ViTForImageClassification
 
-dataset_dir = "images_mr"
+dataset_dir = "animals"
 image_filenames = os. listdir (dataset_dir)[:500]
 src_images = []
 
@@ -63,7 +63,7 @@ def ranking(preprocessed_query_image, preprocessed_src_images, top_k=10):
 
 
 query_image_paths = [
-    r".\images_mr\0img.jpg"
+    r".\animals\0a1f4371e3.jpg"
 ]
 top_k = 10
 
